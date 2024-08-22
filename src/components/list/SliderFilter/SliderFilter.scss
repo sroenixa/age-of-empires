@@ -1,0 +1,51 @@
+.slider-filter{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    label{
+        display: flex;
+        gap: 0.5rem;
+        input[type="checkbox"] {
+            width: 1rem;
+            height: 1rem;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            &:checked{
+                background-color: black;
+            }
+        }
+    }
+    .slider{
+        width: 200px;
+        max-width: 500px;
+        height: 50px;
+        .track{
+            top: 20px;
+            height: 10px;
+            &-0{
+                background: black;
+            }
+            &-1{
+                background: gray;
+            }
+            &-2{
+                background: black;
+            }
+        }
+        .thumb{
+            top: 0.9rem;
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: black;
+            cursor: pointer;
+        }
+        &.disabled{
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+}

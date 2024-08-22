@@ -1,0 +1,18 @@
+.button-filter{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    &:hover{
+        background: black;
+        color: white;
+    }
+    &.active{
+        background: black;
+        color: white;
+        pointer-events: none;
+    }
+}

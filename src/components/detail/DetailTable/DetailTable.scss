@@ -1,0 +1,40 @@
+.detail-table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:  minmax(10rem, 1fr) minmax(10rem, 1fr);
+
+    thead,tbody,tr {
+        display: contents;
+    }
+
+    th {
+        background: black;
+        text-align: left;
+        font-weight: normal;
+        font-size: 1rem;
+        color: white;
+        padding: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px white solid;
+    }
+    
+    td {
+      color: black;
+      padding: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-bottom: 1px black solid;
+    }
+    
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .detail-table {
+       overflow-x: auto;
+    }
+}

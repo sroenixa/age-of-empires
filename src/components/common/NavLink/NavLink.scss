@@ -1,0 +1,12 @@
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    &:hover{
+        font-weight: bold;
+    }
+    &.active{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
