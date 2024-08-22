@@ -41,6 +41,7 @@ Tests to validate that Sagas handle actions and API responses as expected.
 Tests to verify the correct functionality of custom hooks.
 
 ## Folder Structure
+```
 src/
 │
 ├── assets/
@@ -65,3 +66,4 @@ src/
 ├── DetailPage/
 ├── Homepage/
 └── ListPage/
+```
